@@ -1,0 +1,56 @@
+.app {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    background-image: url("sky2.jpg");
+    background-repeat: no-repeat;
+    background-size: 2000px 2000px;
+  
+   
+    
+  }
+
+
+
+.input{
+    height: 30px;
+    width: 25%;
+}
+
+.button{
+    height:30px;
+    width: 15%;
+    font-size: 20px;
+}
+
+
+.outer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .inner{
+    width: 450px;
+    margin:auto;
+    background-color:#ffffff ;
+    box-shadow: 0px 14px 80px rgba(34,35,58,0.2);
+    padding: 40px,55px,45px,55px;
+  }
+
+
+
+
+
+form-group{
+    height: 25px;
+    width: 100px;
+    
+
+}
