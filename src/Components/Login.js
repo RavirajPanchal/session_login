@@ -2,14 +2,14 @@
 
 import './Login.css';
 import React, {Component,useRef} from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
-import HomeIcon from '@mui/icons-material/Home';
+// import AppBar from '@mui/material/AppBar';
+// import Box from '@mui/material/Box';
+// import Toolbar from '@mui/material/Toolbar';
+// import Typography from '@mui/material/Typography';
+// import Button from '@mui/material/Button';
+// import IconButton from '@mui/material/IconButton';
+// import MenuIcon from '@mui/icons-material/Menu';
+// import HomeIcon from '@mui/icons-material/Home';
 import Home from './Home'
 
 function Login() {
@@ -31,27 +31,7 @@ function Login() {
 
   return (
     <>
-    <header>
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
-        <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            MY APP
-          </Typography>
-          <HomeIcon />
-          <Button color="inherit">Login</Button>
-        </Toolbar>
-      </AppBar>
-    </Box>
+    
 
     <div>
             {
@@ -59,42 +39,46 @@ function Login() {
                 <Home/>:
 
       
-     <div className="outer">
-      <div className="inner">
+    //  <div className="outer">
+    //   <div className="inner">
 
       <div className='app'>
     <div className="login-form">
 
 
-            <form onSubmit={handleSubmit}>
-        <div className="form-group">
+         <form onSubmit={handleSubmit}>
+
+
+        <div className="form-group input-container">
          <label>Email</label>    
-            <input type="text" className="form-control" ref={email}/>
-        </div><br/>
-        <div className="form-group">
-            <label>Password</label>  
-            <input type="password" 
-            className="form-control"
-             ref={password} />
+            <input type="text" placeholder="Enter Email" className="form-control" ref={email}/>
         </div>
         <br/>
 
-         <button>Login</button>
-            </form>
-            </div>
-            </div>
-            </div>
-            </div>
 
+        <div className="form-group input-container" >
+            <label>Password</label>  
+             <input type="password" placeholder="Enter Password"  className="form-control" ref={password} />
+        </div>
+        <br/>
+
+        <div className="button-container">
+
+        <button>Login</button>
+
+          </div>
+         
+
+            </form>
+
+            </div>
+            </div>
+            // </div>
+            // </div>
 }
         </div>
 
-
-    </header>
-
-    <footer style={{paddingTop:"10cm"}}>
-        @mphasis
-    </footer>
+  
     </>
   );
 }
